@@ -5,7 +5,9 @@
 	"main": "index.js",
 	"scripts": {
 		"start": "ts-node -r tsconfig-paths/register ./main.ts",
-		"start:dev": "nodemon -r tsconfig-paths/register ./main.ts && jest --watch"
+		"start:dev": "nodemon -r tsconfig-paths/register ./main.ts && jest --watch",
+		"lint": "echo lint",
+		"test": "echo test"
 	},
 	"author": "Mohamed Shaaban",
 	"license": "ISC",
