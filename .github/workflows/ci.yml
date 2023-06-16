@@ -22,11 +22,11 @@ jobs:
           node-version: "16"
           cache: 'npm'
 
-      - name: Install dependencies
-        run: npm install
-
       - name: Run linter
         run: npm run lint
+        
+      - name: start server
+        run: npm start
 
   test:
     name: Test
@@ -41,5 +41,5 @@ jobs:
           node-version: "16"
           cache: 'npm'
 
-      - name: Install dependencies
-        run: npm install
+      - name: Install test
+        run: npm run test
